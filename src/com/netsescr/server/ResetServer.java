@@ -10,9 +10,16 @@ package com.netsescr.server;
  */
 public class ResetServer implements ICommand{
 
+    private IServer server;
+    
+    public ResetServer(IServer server){
+        this.server = server;
+    }
+    
+    
     @Override
     public void ejecutar() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        server.reset();
     }
     
 }

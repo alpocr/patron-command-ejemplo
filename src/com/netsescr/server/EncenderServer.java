@@ -8,6 +8,18 @@ package com.netsescr.server;
  *
  * @author cmaguinness
  */
-public class EncenderServer {
+public class EncenderServer implements ICommand{
+    
+    private IServer server;
+    
+    public EncenderServer(IServer server){
+        this.server = server;
+        
+    }
+
+    @Override
+    public void ejecutar() {
+        server.encender();
+    }
     
 }

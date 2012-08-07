@@ -9,10 +9,17 @@ package com.netsescr.server;
  * @author cmaguinness
  */
 public class ApagarServer implements ICommand{
+    
+    private IServer server;
+    
+    public ApagarServer(IServer server){
+        this.server = server;
+    }
 
     @Override
     public void ejecutar() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        server.apagar();
+        
     }
     
 }
