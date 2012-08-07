@@ -12,17 +12,17 @@ public class CRServer implements IServer{
 
     @Override
     public void apagar() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        System.out.println("Apagando "+getNombre());
     }
 
     @Override
     public void encender() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        System.out.println("Encendiendo "+getNombre());
     }
 
     @Override
     public void reset() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        System.out.println("Reset "+getNombre());
     }
 
     @Override
